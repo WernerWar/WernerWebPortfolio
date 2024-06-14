@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>WG Project 2</title>
+    <style>
+        #particles-js
+        {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            z-index: -1;
+        }
+        .content
+        {
+            position: relative;
+            z-index: 1;
+            color: #272932;
+            max-width: 1920px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        .text-black
+        {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-bold text-black" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-link-bold text-black" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                        <li><a class="dropdown-item nav-link-bold" href="project1.html">Project 1</a></li>
+                        <li><a class="dropdown-item nav-link-bold" href="project2.html">Project 2</a></li>
+                        <li><a class="dropdown-item nav-link-bold" href="project3.html">Project 3</a></li>
+                        <li><a class="dropdown-item nav-link-bold" href="project4.html">Project 4</a></li>
+                        <li><a class="dropdown-item nav-link-bold" href="project5.html">Project 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="particles-js"></div>
+
+    <div class="container mt-5">
+        <div class="content"></div>
+            <h1>Game with HTML, CSS and Javascript</h1>
+            <!-- <h4 class="Space">Here is a video showcasing my project:</h4>
+            <video width="1200" height="800" controls>
+                <source src="Assets/Videos/Project2/Desktop 2024.06.14 - 16.07.24.01.mp4" type="video/mp4">
+            </video> -->
+            <p class="Space">This is a Scripting Project where I was tasked to make a playable Game using HTML, CSS, and Javascript.</p>
+            <p class="Space">I decided to make a Space Invaders kind of game on a canvas, but instead of a Spaceship and Invaders, it's a Frog and Flies. I started by making the playable character Class and added an Event listener to move it around, then I made a Grid Class to spawn grids of enemies, after that, I made the playable character and enemies able to shoot, be destroyable, drew the sprites, and a Backround with HTML and CSS.</p>
+            <h4 class="Space">Here are some Class code snippets:</h4>
+            <div class="image-container">
+                <div class="image-group">
+                    <div class="scroll-animation">
+                        <img src="Assets/Images/Project2/FrogClass.JPG" alt="Frog" width="300" height="450">
+                    </div>
+                    <div class="scroll-animation">
+                        <img src="Assets/Images/Project2/BulletClass.JPG" alt="Bullet" width="300" height="450">
+                    </div>
+                    <div class="scroll-animation">
+                        <img src="Assets/Images/Project2/GridClass.JPG" alt="Grid" width="300" height="450">
+                    </div>
+                </div>
+            </div>
+            <h4 class="Space">Here is an Event listener code snippet:</h4>
+            <div class="image-container">
+                <div class="image-group">
+                    <div class="scroll-animation">
+                        <img src="Assets/Images/Project2/EventListener.JPG" alt="Event" width="300" height="450">
+                    </div>
+                </div>
+            </div>
+            <h4 class="Space">Here are some HTML and CSS code snippet:</h4>
+            <div class="image-container">
+                <div class="image-group">
+                    <div class="scroll-animation">
+                        <img src="Assets/Images/Project2/BackHTML.JPG" alt="HTML" width="300" height="100">
+                    </div>
+                    <div class="scroll-animation">
+                        <img src="Assets/Images/Project2/BackCSS.JPG" alt="CSS" width="300" height="400">
+                    </div>
+                    <div class="scroll-animation">
+                        <img src="Assets/Images/Project2/BackAnimate.JPG" alt="Anim" width="300" height="330">
+                    </div>
+                </div>
+            </div>
+            <h4 class="Space">Thanks for viewing</h4>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="Jquery/jquery3.7.1.js"></script>
+    <script src="JS/Particle.js"></script>
+    <script src="JS/Operations.js"></script>
+</body>
+</html>
